@@ -149,8 +149,8 @@ Jawg_Light.addTo(map);
 
 // Définition des marqueurs de position
 let blackIcon = new L.Icon({
-    iconUrl: './img/marker/marker-icon-black.png',
-    shadowUrl: './img/marker/marker-shadow.png',
+    iconUrl: './inc/img/marker/marker-icon-black.png',
+    shadowUrl: './inc/img/marker/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [0, -30],
