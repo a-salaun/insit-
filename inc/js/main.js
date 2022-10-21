@@ -124,7 +124,9 @@ let map = L.map('map', {
     center: [48.856614, 2.3522219],
     zoom: 10,
     zoomControl: false,
-    scrollWheelZoom: false // on désactive le zoom au scroll
+    scrollWheelZoom: false, // on désactive le zoom au scroll
+    dragging: !L.Browser.mobile, // on déscative le scroll sur mobile
+    tap: !L.Browser.mobile // on désactive le tap sur mobile
 });
 
 // Initialisation du contrôleur de zoom
