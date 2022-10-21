@@ -2,10 +2,9 @@
   "name": "insitu",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "main.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "",
@@ -23,8 +22,5 @@
     "node-fetch": "^2.6.7",
     "node-geocoder": "^4.2.0",
     "pg": "^8.8.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
   }
 }
