@@ -1,0 +1,331 @@
+/* GLOBAL CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: initial !important;
+    font-weight: bold !important;
+}
+
+a.card {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+a.card:hover, a.card:focus {
+    color: white !important;
+    background-color: black !important;
+    box-shadow: 0 0 12px rgb(206, 212, 218);
+}
+
+a.btn:hover {
+    box-shadow: 0 0 12px rgb(206, 212, 218);
+}
+
+/* OPENWEATHERMAP */
+
+#owm {
+    border: 1px solid lightgray;
+    border-radius: .375rem;
+}
+
+#weatherIcon {
+    font-size: 2.8rem;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: white !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0 !important;
+}
+
+.fa-bars {
+    color: black;
+    font-size: 28px;
+}
+
+.navbar .navbar-toggler {
+    height: 40px;
+}
+
+.navbar .navbar-toggler:hover {
+    border-color: rgb(206, 212, 218);
+    outline: none;
+    box-shadow: 0 0 12px rgb(206, 212, 218);
+
+}
+
+.navbar .navbar-toggler:focus {
+    border-color: rgb(206, 212, 218);
+    outline: none;
+    box-shadow: 0 0 12px rgb(206, 212, 218);
+}
+
+
+/* MAP */
+#map {
+    height: 500px;
+}
+
+#map #shadow {
+    position: absolute;
+    -moz-box-shadow: inset 0 -12px 12px -12px rgb(206, 212, 218);
+    -webkit-box-shadow: inset 0 -12px 12px -12px rgb(206, 212, 218);
+    box-shadow: inset 0 -12px 12px -12px rgb(206, 212, 218);
+    width:100%;
+    height:100%;
+    display:block;
+    pointer-events:none;
+    z-index: 1;
+}
+
+.leaflet-pane {
+    padding: 66px 0 0 0;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.leaflet-popup-content-wrapper {
+    margin: 0 0 66px 0;
+}
+
+.leaflet-pane,
+.leaflet-container {
+    z-index: 0 !important; 
+}
+
+.leaflet-control,
+.leaflet-control-attribution {
+    z-index: -1 !important;
+}
+
+.map-label {
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+
+.map-label-content {
+    order: 1;
+    position: relative;
+    left: -50%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 3px;
+    white-space: nowrap;
+    box-shadow: 0 0 8px rgb(0,0,0, 0.5);
+}
+
+.map-label-arrow {
+    order: 2;
+    width: 0px;
+    height: 0px;
+    left: 50%;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    border-width: 10px 6px 0px 6px;
+    margin-left: -6px;
+}
+
+/* FORMULAIRE */
+#form {
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.form-group .form-control,
+.form-group .btn {
+    padding-left: 48px;
+}
+
+.form-group .form-control-feedback {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    margin: 4px 0 0 4px;
+    pointer-events: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+input[type="checkbox"]:focus,
+.uneditable-input:focus {   
+    border-color: rgb(206, 212, 218);
+    box-shadow: 0 0 12px rgb(206, 212, 218);
+}
+
+.list-group-item.active:hover {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+/* COLLAPSE */
+
+.card-header a {
+    text-decoration: none;
+}
+
+.rotate {
+    transition: 0.3s transform ease-in-out;
+}
+
+.collapsed .rotate {
+    transform: rotate(-90deg);
+}
+
+
+/* MODAL */
+
+.modal {
+    --bs-modal-width: 100% !important;
+}
+
+.modal-open {
+    padding-right: 0 !important;
+}
+
+.modal-content {
+    margin-top: 68px !important;
+    border-color: #dee2e6 !important;
+}
+
+.modal-body {
+    padding: 0 !important;
+}
+
+.modal-content .modal-content {
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-content .modal-header {
+    position: relative;
+    background-color: rgb(250, 250, 250);
+    border-bottom: none !important;
+}
+
+.nav-tabs .nav-item {
+    margin: -1px;
+}
+
+.nav-tabs .nav-link {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.nav-tabs .nav-link.active {
+    border-color: #dee2e6 #dee2e6 #fff;
+    font-weight: bold;
+}
+
+.modal-content .btn-close {
+    position: absolute;
+    right: 1.5rem ;
+    margin: 0;
+}
+
+.modal-content .btn-close:hover {
+    box-shadow: 0 0 12px rgb(206, 212, 218);
+}
+
+.form-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    font-size: 18px;
+}
+
+.modal-content .form-control {
+    padding-left: 40px;
+}
+
+.modal-content .form-control, .modal-content .btn {
+    min-height: 40px;
+    border-radius: 3px; 
+}
+
+.modal-content .btn {
+    color: white;
+    background-color: black;
+    border-color: #dee4e7;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.modal-content .button:hover,
+.modal-content .button:focus {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 0 0 12px rgb(206, 212, 218);
+}
+
+.modal-content .modal-footer {
+    background-color: rgb(250, 250, 250);
+    border-color: #dee4e7;
+    text-align: center;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.modal-content .modal-footer a {
+    color: #999;
+}
+
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
