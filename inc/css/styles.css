@@ -260,7 +260,7 @@ input[type="checkbox"]:focus,
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     font-size: 3vw;
-    color: black;
+    color: black !important;
 }
 
 .nav-tabs .nav-link.active {
